@@ -124,18 +124,4 @@ window.onload = () => {
   startTimer();
   loadGame();
   
-  const restartButton = document.querySelector('.restart-button');
-  restartButton.addEventListener('click', () => {
-    // Reset the timer
-    clearInterval(this.loop);
-    timer.innerHTML = '0';
-    startTimer();
-
-    // Clear existing cards
-    grid.innerHTML = '';
-
-    // Load a new game
-    loadGame();
-  });
-
-}
+};
